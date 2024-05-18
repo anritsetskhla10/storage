@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>storage</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Storage Form</h1>
+    <form id="storageForm">
+        <label for="localDataKey">Local Storage Key:</label>
+        <input type="text" id="localDataKey" name="localDataKey"><br><br>
+
+        <label for="localDataValue">Local Storage Value:</label>
+        <input type="text" id="localDataValue" name="localDataValue"><br><br>
+
+        <label for="sessionDataKey">Session Storage Key:</label>
+        <input type="text" id="sessionDataKey" name="sessionDataKey"><br><br>
+
+        <label for="sessionDataValue">Session Storage Value:</label>
+        <input type="text" id="sessionDataValue" name="sessionDataValue"><br><br>
+
+        <button type="submit">Save Data</button>
+    </form>
+
+    <h2>Stored Data</h2>
+    <div id="storedData">
+        <h3>Local Storage</h3>
+        <ul id="localStorageData"></ul>
+        <button id="clearLocalStorage">Clear Local Storage</button>
+        <h3>Session Storage</h3>
+        <ul id="sessionStorageData"></ul>
+        <button id="clearSessionStorage">Clear Session Storage</button>
+    </div>
+
+</body>
+</html>
